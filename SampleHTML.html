@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>UAT Space Program</title>
+          <style type="text/css">
+  p{ color: blue;
+     font-size: x-large;
+     font-weight: bold;
+     font-family:'Times New Roman', Times, serif;
+}
+div {
+  background-color: lightblue;
+}
+
+          </style>
+          <script type="text/javascript">
+          var countDown= 10;
+          document.getElementById("countdownlabel").innerHTML=countDown;
+
+          function runCountdown()
+          {
+          countDown--;
+          if(countDown != 0)
+          {
+            document.getElementById("countdownlabel").innerHTML=
+            countdown;
+          }
+          else
+          {
+          document.getElementById("blastoffLabel").innerHTML=
+          "Blast Off";
+          }
+          }
+          </script>
+          <!--Comment-->
+    </head>
+              <body>
+              <img src="UATspaceLogo-2.jpg>"
+              style="width:100px;height: 100px;">
+              <div>
+              <h2>Test of the document write function</h2>
+              <p>Test of the paragraphs tags</p>
+              </div>
+              
+              <p id="countdownlabel"></p>
+              <p id="blastoffLabel"></p>
+              <button id="b" onclick="runCountdown()">Start</button>    
+              <button id="b" onclick="runCountdown()">Stop</button>    
+              
+              
+              </body>
+
+</html>
