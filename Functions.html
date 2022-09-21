@@ -1,0 +1,29 @@
+<DOCTYPE html>
+<head>
+    <title>Example</title>
+
+<!--var refresh = 1000; makes sure the timer changes every 1000 millimeter-->
+  <script type="text/javascript">
+
+     function display_c() {
+      var refresh = 1000;
+      mytime=setTimeout('display_ct()',refresh)
+     }
+
+     function display_ct(){
+     var x = new Date()    
+     document.getElementById('ct').innerHTML = x;
+     display_c();
+     }
+  </script>
+<!--new Date allows for the date of the timer to change-->
+</head>
+<body onload="display_ct();">
+  <span id="ct"></span>
+</body>
+</html>
+  
+
+
+
+
