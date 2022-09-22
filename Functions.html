@@ -1,24 +1,27 @@
 <DOCTYPE html>
 <head>
-    <title>Example</title>
-
-<!--var refresh = 1000; makes sure the timer changes every 1000 millimeter-->
+    <style>
+         body  {
+             background-image: radial-gradient(yellow, green, blue);  //background-image inserts a image into the back of your website, or it can be simple colors
+            background-color: #cccccc;
+               }
+<!---->
   <script type="text/javascript">
 
      function display_c() {
       var refresh = 1000;
-      mytime=setTimeout('display_ct()',refresh)
+      mytime=setTimeout('display_ct()',refresh) <--!(display_ct,refresh) is the code used to refresh the clock after every 1000-->
      }
 
-     function display_ct(){
-     var x = new Date()    
+     function display_ct(){ 
+     var x = new Date()  <--when the a new day begans, new date() is what helps the program match with the corresponding date-->   
      document.getElementById('ct').innerHTML = x;
      display_c();
      }
   </script>
-<!--new Date allows for the date of the timer to change-->
+
 </head>
-<body onload="display_ct();">
+<body onload="display_ct();">    <--the code responsible for making the timer show up when it the website is running.
   <span id="ct"></span>
 </body>
 </html>
