@@ -1,32 +1,50 @@
-<DOCTYPE html>
-<head>
-    <style>
-         body  {
-             background-image: radial-gradient(yellow, green, blue);  //background-image inserts a image into the back of your website, or it can be simple colors
-            background-color: #cccccc;
-               }
-<!---->
-  <script type="text/javascript">
+//Dasaun Hammonds
 
-     function display_c() {
+<DOCTYPE html> 
+<head>
+
+  <style>  
+    #grad1 {
+  height: 200px;
+  background-color: #cccccc;
+  background-image: linear-gradient(red, yellow, blue);
+}
+
+body {
+  background-color: #92a8d1;
+}
+  </style>
+
+  <script type="text/javascript">
+     function display_c() { //fuction display is used to display the counter and is set to refresh every 1000 second
       var refresh = 1000;
-      mytime=setTimeout('display_ct()',refresh) <--!(display_ct,refresh) is the code used to refresh the clock after every 1000-->
+      mytime=setTimeout('display_ct()',refresh)
      }
 
-     function display_ct(){ 
-     var x = new Date()  <--when the a new day begans, new date() is what helps the program match with the corresponding date-->   
+     function display_ct(){
+     var x = new Date()  //displays the date of the current day   
      document.getElementById('ct').innerHTML = x;
      display_c();
      }
-  </script>
 
+      const hour = new Date().getHours(); //produces a constant showing of the hour on the website
+
+      alert("Warning Less than 1/2 way to launch, time left = 3 minutes")
+        if (seconds < 5) { //if statement is set so if the timer is less than 5 seconds, a message will appear
+        greeting = "Warning Less than 1/2 way to launch, time left = 3 minutes";
+        } else if (seconds < 5) {   //else statement is set so if the timer is greater than 5 seconds, a message will appear
+        greeting = "Good evening";
+        }
+      
+
+  </script>
+<!--new Date allows the code to change the corresponding date so it matches with what -->
 </head>
-<body onload="display_ct();">    <--the code responsible for making the timer show up when it the website is running.
+
+<body onload="display_ct()";>
   <span id="ct"></span>
+
+  <div id="grad1"></div>
 </body>
 </html>
   
-
-
-
-
