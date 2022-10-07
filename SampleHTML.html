@@ -29,41 +29,58 @@ table, th, td {
   border:1px solid black;
 }
 
-
 </style>
 
-<script type="text/javascript">
-  var countDown= 10;
-  document.getElementById("countdownlabel").innerHTML=countDown;
+    <script type="text/javascript">
+      var countDown= 10;
+      document.getElementById("countdownlabel").innerHTML=countDown;
 
-  function runCountdown()
-  {
-  countDown--;
-  if(countDown != 0)
-  {
-    
-  }
-  else
-  {
-  document.getElementById("blastoffLabel").innerHTML=
-  "Blast Off";
-  }
-  }
+      function runCountdown()
+      {
+        countDown--;
+        if(countDown != 0)
+        {
+        
+        }
+        else
+        {
+        document.getElementById("blastoffLabel").innerHTML=
+        "Blast Off";
+        }
+      }
+    </script>
 
+          <script type="text/javascript">
+           function hidemyElement()
+
+           {
+
+            document.getElementById("stop").style.opacity= 0;
+
+           }
+          </script> 
+
+          <script type="text/javascript">
+          function showMyElement()
+           {
+
+            document.getElementById("stop").style.opacity = 1;
+           }
+          </script>
+</head>
+              <script>
+              loginForm.addEventListener('input'), () => {
+              if (username.value.length < 20 &&
+                  password.value.length < 3) {
+                  }
+                    else {
+                     
+                    }
+                  }
+              </script>
+
+                    
 </script>
-
-<p id="demo"></p>
-
-<script>
-let text = "A";
-let i = 0;
-while (i < 5) {
-  text += "<br>" + i;
-  i++;
-}
-document.getElementById("demo").innerHTML = text;
-</script>
-
         <table style="width:100%">
            <tr>
               <th>Data Type</th>
@@ -162,21 +179,30 @@ document.getElementById("demo").innerHTML = text;
           <button id="b" onclick="runCountdown()">Start</button>    
           <button id="b" onclick="runCountdown()">Stop</button> 
 
-    <p><a href="file:///media/fuse/crostini_10fd23f2b335a71eb5cec80b96ae1cb1f782c4b2_termina_penguin/HTML%20folder/Functions.html">Current time</a></p>
+     <p><a href="file:///media/fuse/crostini_10fd23f2b335a71eb5cec80b96ae1cb1f782c4b2_termina_penguin/HTML%20folder/Functions.html">Current time</a></p>
          
     
-<form action="/action_page.php">
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"><br><br>
-  <label for="bnumber">Badge number:</label>
-  <input type="text" id="bnumber" name="bnumber"><br><br>
-  <input type="submit" value="Submit">
-</form>
+        <form id="loginForm">
+          <input type="text" id="username" placeholder="Username">
+          <input type="text" id="badge number" name="password" placeholder="Password">
+          <button id="loginBtn">Login</button>
+        </form>
 
-<button class="button button1">Start</button>
-<button class="button button2">Stop</button>
-</head>
+          <button onclick="enable()" id='btn'>Start</button>
+          <button  onclick="enable()" id='btn'>Stop</button>
+     
+
+          <audio controls>
+            <source src="My files/Downloads/us-lab-background.mp3" type="audio/mpeg">
+          </audio>
+
+           <div id="btndiv" style="margin-left:1000px;margin-top:500px;position:absolute;">
+           <button id="start" onmouseover="this.style.backgroundColor='navy'; this.style.color='gray'; this.style.color='orange'; hidemyElement();" onmouseout="this.style.backgroundColor='green'; this.style.color='navy';showMyElement();
+           ;return true;">START</button>&nbsp;&nbsp;
+
+           <div id="btndiv1" style="margin-left:1000px; margin-top:500px;position:absolute;"></div>
+
+           <button id="stop">STOP</button>
+           </div>
 </body>                         
 </html>
