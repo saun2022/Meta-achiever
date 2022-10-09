@@ -50,35 +50,17 @@ table, th, td {
       }
     </script>
 
-          <script type="text/javascript">
-           function hidemyElement()
-
-           {
-
-            document.getElementById("stop").style.opacity= 0;
-
-           }
-          </script> 
-
-          <script type="text/javascript">
-          function showMyElement()
-           {
-
-            document.getElementById("stop").style.opacity = 1;
-           }
-          </script>
+          
 </head>
               <script>
-              loginForm.addEventListener('input'), () => {
-              if (username.value.length < 20 &&
-                  password.value.length < 3) {
-                  }
-                    else {
-                     
-                    }
-                  }
-              </script>
+                var ourArray = [];
+                for (var i = 0; i < 5; i++) {
+                  if (i > 2) break;
+                  ourArray.push(i);
+                }
+                console.log(ourArray);
 
+              </script>
                     
 </script>
         <table style="width:100%">
@@ -182,27 +164,50 @@ table, th, td {
      <p><a href="file:///media/fuse/crostini_10fd23f2b335a71eb5cec80b96ae1cb1f782c4b2_termina_penguin/HTML%20folder/Functions.html">Current time</a></p>
          
     
-        <form id="loginForm">
-          <input type="text" id="username" placeholder="Username">
-          <input type="text" id="badge number" name="password" placeholder="Password">
-          <button id="loginBtn">Login</button>
-        </form>
+     <form action="/action_page.php">
+      <label for="Firstname">Firstname:</label>
+      <input type="fname" id="Firstname" name="Firstname" minlength="20"><br><br>
+      <label for="bnumber">Badge number:</label>
+      <input type="bnumber" id="Badge number" name="Badge number" minlength="3"><br><br>
+      <input type="submit" value="Submit">
+      <input type="reset">
+    </form>
+    
 
           <button onclick="enable()" id='btn'>Start</button>
           <button  onclick="enable()" id='btn'>Stop</button>
      
 
-          <audio controls>
-            <source src="My files/Downloads/us-lab-background.mp3" type="audio/mpeg">
-          </audio>
+          <script type="text/javascript">
+            function hidemyElement()
+ 
+            {
+ 
+             document.getElementById("stop").style.opacity= 0;
+ 
+            }
+           </script> 
 
-           <div id="btndiv" style="margin-left:1000px;margin-top:500px;position:absolute;">
-           <button id="start" onmouseover="this.style.backgroundColor='navy'; this.style.color='gray'; this.style.color='orange'; hidemyElement();" onmouseout="this.style.backgroundColor='green'; this.style.color='navy';showMyElement();
-           ;return true;">START</button>&nbsp;&nbsp;
+           <script type="text/javascript">
+            function showMyElement()
+             {
+  
+              document.getElementById("stop").style.opacity = 1;
+             }
+            </script>
 
-           <div id="btndiv1" style="margin-left:1000px; margin-top:500px;position:absolute;"></div>
+<div id="btndiv" style="margin-left:1000px;margin-top:500px;position:absolute;">
+<button id="start" onmouseover="this.style.backgroundColor='navy'; this.style.color='gray'; this.style.color='orange'; hidemyElement();" onmouseout="this.style.backgroundColor='green'; this.style.color='navy';showMyElement();return true;">START</button>&nbsp;&nbsp;
 
-           <button id="stop">STOP</button>
-           </div>
+<div id="btndiv1" style="margin-left:1000px; margin-top:500px;position:absolute;"></div>
+
+<button id="stop">STOP</button>
+</div>
+
+<audio controls autoplay>
+  <source src="My files/Downloads/Yes and No at the Same Time-half.cool.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
 </body>                         
 </html>
